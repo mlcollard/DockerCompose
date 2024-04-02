@@ -2,6 +2,10 @@ services:
 
   ubuntu:
     image: mlcollard/ubuntu
+    volumes:
+      - .:/Source:ro
+    working_dir: /Build
+    command: cat /etc/os-release
 
   fedora:
     image: mlcollard/fedora
