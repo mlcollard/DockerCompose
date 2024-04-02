@@ -9,3 +9,7 @@ services:
 
   fedora:
     image: mlcollard/fedora
+    volumes:
+      - .:/Source:ro
+    working_dir: /Build
+    command: cat /etc/os-release
