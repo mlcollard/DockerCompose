@@ -1,0 +1,7 @@
+services:
+
+  ubuntu:
+    image: mlcollard/ubuntu
+
+  fedora:
+    image: mlcollard/fedora
